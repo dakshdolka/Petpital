@@ -1,11 +1,13 @@
 package com.petpital.vet_service.dto;
 
+import java.time.LocalDate;
+
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class PetDTO {
+public class PetResponseDTO {
     private String id;
 
     private String name;
@@ -16,5 +18,10 @@ public class PetDTO {
 
     private String address;
 
-    private String visitDate;
+    private String email;
+
+    private LocalDate registeredDate;
+
+    private int visits;
+
 }
